@@ -1,0 +1,142 @@
+    ol#top-ra {
+      background:			#fff;
+      padding:			0!important;
+      margin:				0!important;
+      list-style-type:	none;
+    }
+    div.comment-thread &gt; ol#top-ra &gt; li.comment {
+      background:			#f1f1f1;
+      border-bottom:		1px solid #dee2e6!important;
+      display:			-ms-flexbox;
+      display:			flex;
+      -ms-flex-wrap:		wrap;
+      flex-wrap:			wrap;
+      margin:				0.5em 0.3em;
+    }
+    /* Left */
+    div.comment-thread &gt; ol#top-ra &gt; li.comment &gt; div.avatar-image-container {
+      -ms-flex:			0 0 25%;
+      flex:				0 0 25%;
+      max-width:			25%;
+      padding:			0.3em;
+    }
+    li.comment div.avatar-image-container img{
+      width:				100%;
+      border-radius:		100%!important;
+    }
+    /* Right */
+    div.comment-thread &gt; ol#top-ra &gt; li.comment &gt; div.comment-block {
+      -ms-flex:			0 0 75%;
+      flex:				0 0 75%;
+      max-width:			75%;
+      padding:			0.3em 0.3em 0.3em 0;
+    }
+    div.comment-thread &gt; ol#top-ra &gt; li.comment &gt; div.comment-block div {
+      display:			-ms-flexbox!important;
+      display:			flex!important;
+      -ms-flex-direction:	column-reverse!important;
+      flex-direction:		column-reverse!important;
+    }
+    /* Comment author */
+    ol#top-ra &gt; li &gt; div &gt; div &gt; cite &gt; a {
+      font-style:			normal;
+      color:				#000;
+      text-decoration:	none;
+      font-weight:		bold;
+    }
+    /* Comment date */
+    ol#top-ra &gt; li &gt; div &gt; div &gt; span {
+      text-align:		right!important;
+    }
+    ol#top-ra &gt; li &gt; div &gt; div &gt; span &gt; a {
+      font-style:			normal;
+      color:				#6c757d!important;
+      text-decoration:	none;
+      font-weight:		normal;
+    }
+    /* Response and delete */
+    ol#top-ra &gt; li &gt; div &gt; span.comment-actions {
+      display:			-ms-flexbox;
+      display:			flex;
+      -ms-flex-wrap:		wrap;
+      flex-wrap:			wrap;
+      text-align:			center;
+    }
+    ol#top-ra &gt; li &gt; div &gt; span &gt; a.comment-reply {
+      -ms-flex:			0 0 50%;
+      flex:				0 0 50%;
+      max-width:			50%;
+    }
+    ol#top-ra &gt; li &gt; div &gt; span &gt; span.item-control {
+      -ms-flex:			0 0 50%;
+      flex:				0 0 50%;
+      max-width:			50%;
+    }
+    /* COMMENTS REPLY */
+    /* Hidden replies */
+    div.comment-replies &gt; div &gt; span &gt; span &gt; a {
+      display:			none;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div.continue &gt; a {
+      display:			none;
+    }
+    /* Formating replys */
+    div.comment-replies {
+      width:				100%;
+    }
+    div.comment-replies div ol {
+      list-style-type:	none;
+      padding:			0;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li.comment {
+      background:			#ddd;
+      display:			-ms-flexbox;
+      display:			flex;
+      -ms-flex-wrap:		wrap;
+      flex-wrap:			wrap;
+      -ms-flex-direction:	row-reverse!important;
+      flex-direction:		row-reverse!important;
+      margin: 			0.1em 0 0 0;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li.comment &gt; div.avatar-image-container {
+      -ms-flex:			0 0 25%;
+      flex:				0 0 25%;
+      max-width:			25%;
+      padding:			0.3em;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li.comment &gt; div.comment-block {
+      -ms-flex:			0 0 75%;
+      flex:				0 0 75%;
+      max-width:			75%;
+      padding:			0.3em 0 0.3em 0.3em;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li &gt; div &gt; div.comment-header {
+      display:			-ms-flexbox;
+      display:			flex;
+      -ms-flex-wrap:		wrap;
+      flex-wrap:			wrap;
+      -ms-flex-direction:	column-reverse;
+      flex-direction:		column-reverse;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li &gt; div &gt; div.comment-header  &gt; cite &gt; a {
+      font-style:			normal;
+      color:				#000;
+      text-decoration:	none;
+      font-weight:		bold;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li &gt; div &gt; div.comment-header  &gt; span.datetime &gt; a {
+      font-style:		normal;
+      color:			#6c757d!important;
+      text-decoration:	none;
+      font-weight:		normal;
+    }
+    div.comment-replies &gt; div &gt; ol &gt; div &gt; li &gt; div &gt; span.comment-actions {
+      display:			-ms-flexbox;
+      display:			flex;
+      -ms-flex-pack:	center;
+      justify-content:	center;
+    }
+    /* Comment box full */
+    div.comment-replybox-single {
+      width:100%;
+    }
