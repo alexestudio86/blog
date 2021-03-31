@@ -94,7 +94,7 @@
         if(index<1){
           modalImageElement.style = 'width:100%, height:auto; object-fit:cover';
         }else{
-          modalImageElement.style = 'width:33.33333%; float:left';
+          modalImageElement.style = 'width:25%; float:left';
         }
       }else{
         modalImageElement.addEventListener('click', modalSingleImage);;
