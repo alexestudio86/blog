@@ -1,11 +1,7 @@
-  // LIGHTBOX
+  // LIGHBOX
 
-  // Variable for all images
-  modalImageElements = document.querySelectorAll('img.modal-image');
-  indice=0;
 
-  // Modal Single Image
-  const modalSingleImage = (e) => {
+  const lightbox = (e) => {
     extBtnContainer = document.createElement('div');
     extBtnContainer.classList.add('w3-padding', 'w3-display-topright', 'w3-margin-bottom');
       extBtn = document.createElement('span');
@@ -29,21 +25,6 @@
       imgContainer.appendChild(imgFigCaption);
   }
 
-  // MODAL MULTIPLE IMAGES
-  const modalMultipleImages = (e) => {
-    extBtnContainer = document.createElement('div');
-    extBtnContainer.classList.add('w3-padding', 'w3-display-topright');
-    extBtnContainer.addEventListener('click', modalGeneral);
-      extBtn = document.createElement('span');
-      extBtn.classList.add('w3-xlarge', 'w3-white', 'w3-button');
-      extBtn.innerHTML = '&times;'
-    imgPadding = document.createElement('div');
-    imgPadding.classList.add('w3-padding-16');
-      imgContainer = document.createElement('figure');
-      imgContainer.classList.add('w3-modal-content', 'w3-display-container');
-        imgPicture = document.createElement('img');
-        imgPicture.classList.add('w3-image');
-        imgPicture.style.width = '100%';
         imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
         indice = parseInt(e.currentTarget.getAttribute('indice'));
         imgPicture.setAttribute('src', (modalImageElements[indice]).getAttribute('src'));
