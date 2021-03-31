@@ -1,9 +1,8 @@
-// CAROUSEL / SLIDER
-
 const carouselContainers = document.querySelectorAll('div.carousel');
 
 var carouselIndex = 0;
 
+// Text inside controls
 const carouselPlayer = () => {
   for(let carouselContainer of carouselContainers){
     carouselImgs = carouselContainer.querySelectorAll('img');
@@ -26,7 +25,7 @@ const carouselPlayer = () => {
 }
 carouselPlayer();
 
-
+// Create carousel elements
 var clickState = false;
 const carouselControls = () => {
   for(let carouselContainer of carouselContainers){
@@ -84,6 +83,8 @@ const carouselControls = () => {
         rightContainer.appendChild(rightButton);
   }
 }
+
+// Add events to start
 if(carouselContainers){
   carouselControls();
 }
