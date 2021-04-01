@@ -23,8 +23,6 @@
     modal.appendChild(imgContainer);
       imgContainer.appendChild(imgPicture);
       imgContainer.appendChild(imgFigCaption);
-  }
-
         imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
         indice = parseInt(e.currentTarget.getAttribute('indice'));
         imgPicture.setAttribute('src', (modalImageElements[indice]).getAttribute('src'));
