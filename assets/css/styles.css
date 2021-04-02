@@ -13,6 +13,7 @@ ul {
 }
 figcaption {
   height:           50px;
+  padding:          4px;
 }
 .text-uppercase {
   text-transform:   uppercase;
