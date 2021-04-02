@@ -31,7 +31,7 @@ const carouselControls = () => {
   for(let carouselContainer of carouselContainers){
     carouselImgs = carouselContainer.querySelectorAll('img');
     for(let [index,carouselImg] of carouselImgs.entries()){
-      carouselImg.classList.add('w3-hide');
+      carouselImg.classList.add('w3-hide', 'animate__animated', 'animate__fadeIn');
       carouselImg.setAttribute('indeximg', index);
       carouselImg.style = 'width:100%';
     };
