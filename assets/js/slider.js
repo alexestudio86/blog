@@ -13,11 +13,12 @@
       extBtn.classList.add('w3-large', 'w3-white', 'w3-button');
       extBtn.innerHTML = '&times;'
     imgPadding = document.createElement('div');
+    imgPadding.classList.add('w3-padding-16');
       imgContainer = document.createElement('figure');
       imgContainer.classList.add('w3-display-container', 'w3-content');
         imgPicture = document.createElement('img');
         imgPicture.classList.add('w3-image');
-        imgPicture.style = 'width:100%; height:80vh; object-fit:contain';
+        imgPicture.style = 'width:100%; max-height:80vh; object-fit:contain';
         imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
         indice = parseInt(e.currentTarget.getAttribute('indice'));
         imgPicture.setAttribute('src', (sliderElements[indice]).getAttribute('src'));
