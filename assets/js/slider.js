@@ -10,10 +10,9 @@
     extBtnContainer.classList.add('w3-padding', 'w3-display-topright');
     extBtnContainer.addEventListener('click', modalGeneral);
       extBtn = document.createElement('span');
-      extBtn.classList.add('w3-xlarge', 'w3-white', 'w3-button');
+      extBtn.classList.add('w3-large', 'w3-white', 'w3-button');
       extBtn.innerHTML = '&times;'
     imgPadding = document.createElement('div');
-    imgPadding.classList.add('w3-padding-16');
       imgContainer = document.createElement('figure');
       imgContainer.classList.add('w3-display-container', 'w3-content');
         imgPicture = document.createElement('img');
