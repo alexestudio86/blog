@@ -21,6 +21,7 @@ const lightbox = (e) => {
     imgFigCaption.textContent = e.target.getAttribute('alt');
     imgFigCaption.classList.add('w3-black', 'w3-opacity', 'w3-xlarge', 'w3-center');
 
+  modal.classList.add('w3-black');
   modal.appendChild(extBtnContainer);
     extBtnContainer.appendChild(extBtn);
   modal.appendChild(imgContainer);
