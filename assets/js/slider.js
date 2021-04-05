@@ -49,6 +49,8 @@
         imgFigCaption = document.createElement('figcaption');
         imgFigCaption.classList.add('w3-black', 'w3-opacity', 'w3-large', 'w3-padding-small', 'w3-display-bottommiddle', 'w-100', 'w3-center');
         imgFigCaption.textContent = e.target.getAttribute('alt');
+
+    modal.classList.add('w3-black');
     modal.appendChild(extBtnContainer);
       extBtnContainer.appendChild(extBtn);
     modal.appendChild(imgPadding);
