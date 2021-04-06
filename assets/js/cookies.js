@@ -1,5 +1,5 @@
 // COOKIES MODAL
-const coockiesWindow = localStorage.getItem('privacy');
+const cookiesWindow = localStorage.getItem('privacy');
 if(!cookiesWindow){
 
   modalGeneral();
