@@ -16,7 +16,7 @@ if(!cookiesWindow){
       firstMessage = document.createElement('p');
       firstMessage.classList.add('w3-container');
       //]]>
-      firstMessage.textContent = '<data:messages.euCookieNotice2018/> consulte mas detalles en nestro ';
+      firstMessage.textContent = 'Este sitio utiliza cookies de Google para prestar sus servicios y para analizar su tráfico. Tu dirección IP y user-agent se comparten con Google, junto con las métricas de rendimiento y de seguridad, para garantizar la calidad del servicio, generar estadísticas de uso y detectar y solucionar abusos. Consulte mas detalles en nestro ';
       //<![CDATA[
         spanMessage = document.createElement('a');
         spanMessage.classList.add('w3-text-red');
