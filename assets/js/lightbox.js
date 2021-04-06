@@ -12,7 +12,7 @@ const lightbox = (e) => {
   imgContainer.classList.add('w3-display-middle', 'w-100',  'w3-content','animate__animated','animate__fadeIn');
     imgPicture = document.createElement('img');
     imgPicture.classList.add('w3-image');
-    imgPicture..style = 'width:100%; max-height:80vh; object-fit:contain';
+    imgPicture.style = 'width:100%; max-height:80vh; object-fit:contain';
     imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
     imgPicture.setAttribute('src', e.currentTarget.getAttribute('src'));
     imgFigCaption = document.createElement('figcaption');
