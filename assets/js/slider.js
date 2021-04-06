@@ -12,20 +12,19 @@
       extBtn = document.createElement('span');
       extBtn.classList.add('w3-large', 'w3-white', 'w3-button');
       extBtn.innerHTML = '&times;'
-    imgPadding = document.createElement('div');
-    imgPadding.classList.add('w3-padding-16');
-      imgContainer = document.createElement('figure');
-      imgContainer.classList.add('w3-display-container', 'w3-content');
-        imgPicture = document.createElement('img');
-        imgPicture.classList.add('w3-image');
-        imgPicture.style = 'width:100%; max-height:80vh; object-fit:contain';
-        imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
-        indice = parseInt(e.currentTarget.getAttribute('indice'));
-        imgPicture.setAttribute('src', (sliderElements[indice]).getAttribute('src'));
-        imgLeftBtn = document.createElement('button');
-        imgLeftBtn.classList.add('w3-button', 'w3-gray','w3-display-left');
-        imgLeftBtn.innerHTML = '&#10094;';
-        imgLeftBtn.addEventListener('click', () => {
+
+    imgContainer = document.createElement('figure');
+    imgContainer.classList.add('w3-display-middle', 'w-100','w3-content');
+      imgPicture = document.createElement('img');
+      imgPicture.classList.add('w3-image');
+      imgPicture.style = 'width:100%; max-height:80vh; object-fit:contain';
+      imgPicture.setAttribute('alt', e.currentTarget.getAttribute('alt'));
+      indice = parseInt(e.currentTarget.getAttribute('indice'));
+      imgPicture.setAttribute('src', (sliderElements[indice]).getAttribute('src'));
+      imgLeftBtn = document.createElement('button');
+      imgLeftBtn.classList.add('w3-button', 'w3-gray','w3-display-left');
+      imgLeftBtn.innerHTML = '&#10094;';
+      imgLeftBtn.addEventListener('click', () => {
           if(indice == 0){
             indice = sliderElements.length-1;
           }else{
@@ -53,12 +52,11 @@
     modal.classList.add('w3-black');
     modal.appendChild(extBtnContainer);
       extBtnContainer.appendChild(extBtn);
-    modal.appendChild(imgPadding);
-      imgPadding.appendChild(imgContainer);
-        imgContainer.appendChild(imgPicture);
-        imgContainer.appendChild(imgLeftBtn);
-        imgContainer.appendChild(imgRightBtn);
-        imgContainer.appendChild(imgFigCaption);
+    modal.appendChild(imgContainer);
+      imgContainer.appendChild(imgPicture);
+      imgContainer.appendChild(imgLeftBtn);
+      imgContainer.appendChild(imgRightBtn);
+      imgContainer.appendChild(imgFigCaption);
   }
 
   // Event modal to images and format width
