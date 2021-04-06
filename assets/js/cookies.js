@@ -1,5 +1,5 @@
 // COOKIES MODAL
-const cookiesWindow = localStorage.getItem('privacity');
+const coockiesWindow = localStorage.getItem('privacy');
 if(!cookiesWindow){
 
   modalGeneral();
@@ -41,6 +41,6 @@ if(!cookiesWindow){
         footerContainer.appendChild(btnContainer);
           btnContainer.appendChild(acceptBtn);
 
-  localStorage.setItem('popWindow', 'privacity');
+  localStorage.setItem('privacy', 'accepted');
 
 }
