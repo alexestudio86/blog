@@ -12,7 +12,6 @@
       extBtn = document.createElement('span');
       extBtn.classList.add('w3-large', 'w3-white', 'w3-button');
       extBtn.innerHTML = '&times;'
-
     imgContainer = document.createElement('figure');
     imgContainer.classList.add('w3-display-middle', 'w-100','w3-content');
       imgPicture = document.createElement('img');
