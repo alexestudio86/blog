@@ -6,12 +6,10 @@
 
   // Modal multiple images
   const slideMultipleImages = (e) => {
-    extBtnContainer = document.createElement('div');
-    extBtnContainer.classList.add('w3-padding', 'w3-display-topright');
-    extBtnContainer.addEventListener('click', modalGeneral);
-      extBtn = document.createElement('span');
-      extBtn.classList.add('w3-large', 'w3-white', 'w3-button');
-      extBtn.innerHTML = '&times;'
+    extBtn = document.createElement('span');
+    extBtn.classList.add('w3-large', 'w3-white', 'w3-button', 'w3-display-topright');
+    extBtn.innerHTML = '&times;'
+    extBtn.addEventListener('click', modalGeneral);
     imgContainer = document.createElement('figure');
     imgContainer.classList.add('w3-display-middle', 'w-100','w3-content');
       imgPicture = document.createElement('img');
@@ -49,8 +47,7 @@
         imgFigCaption.textContent = e.target.getAttribute('alt');
 
     modal.classList.add('w3-black');
-    modal.appendChild(extBtnContainer);
-      extBtnContainer.appendChild(extBtn);
+    modal.appendChild(extBtn);
     modal.appendChild(imgContainer);
       imgContainer.appendChild(imgPicture);
       imgContainer.appendChild(imgLeftBtn);
