@@ -8,7 +8,7 @@
   const slideMultipleImages = (e) => {
     extBtn = document.createElement('span');
     extBtn.classList.add('w3-large', 'w3-white', 'w3-button', 'w3-display-topright');
-    extBtn.innerHTML = '&times;'
+    extBtn.innerHTML = '&times;';
     extBtn.addEventListener('click', modalGeneral);
     imgContainer = document.createElement('figure');
     imgContainer.classList.add('w3-display-middle', 'w-100','w3-content');
