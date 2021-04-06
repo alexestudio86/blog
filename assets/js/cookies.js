@@ -15,7 +15,9 @@ if(!cookiesWindow){
         titleContainer.textContent = 'Uso de datos';
       firstMessage = document.createElement('p');
       firstMessage.classList.add('w3-container');
+      //]]>
       firstMessage.textContent = '<data:messages.euCookieNotice2018/> consulte mas detalles en nestro ';
+      //<![CDATA[
         spanMessage = document.createElement('a');
         spanMessage.classList.add('w3-text-red');
         spanMessage.setAttribute('href', 'https://www.alexestudio86.com/p/aviso-de-privacidad.html');
