@@ -30,6 +30,9 @@ if(!cookiesWindow){
           acceptBtn = document.createElement('a');
           acceptBtn.classList.add('w3-button', 'w3-round', 'w3-blue');
           acceptBtn.textContent = 'Aceptar';
+            acceptBtn.addEventListener('click', () => {
+              localStorage.setItem('privacy', 'accepted');
+            });
           acceptBtn.addEventListener('click', modalGeneral);
 
     modal.appendChild(modalContent);
@@ -40,7 +43,5 @@ if(!cookiesWindow){
       modalContent.appendChild(footerContainer);
         footerContainer.appendChild(btnContainer);
           btnContainer.appendChild(acceptBtn);
-
-  localStorage.setItem('privacy', 'accepted');
 
 }
