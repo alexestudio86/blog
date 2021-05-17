@@ -31,5 +31,6 @@ if(lightboxElements){
   for(let lightboxElement of lightboxElements){
     lightboxElement.addEventListener('click', modalGeneral);
     lightboxElement.addEventListener('click', lightbox);
+    lightboxElement.style = 'cursor:pointer';
   }
 }
